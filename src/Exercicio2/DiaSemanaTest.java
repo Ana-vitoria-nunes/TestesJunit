@@ -14,7 +14,7 @@ public class DiaSemanaTest {
     @Test
     public void verificarSeEDomingo() {
         String resultado = DiaSemana.melhorDiaFeira();
-        assertEquals("Hoje é domingo! É o melhor dia para ir à feira.", resultado);
+        assertEquals("Hoje é domingo, um ótimo  dia para ir à feira.", resultado);
     }
 
     @Test

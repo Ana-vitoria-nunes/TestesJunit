@@ -8,12 +8,13 @@ public class Calcular {
     public int getNumero() {
         return numero;
     }
-    public void verificarSeONumeroEparOuImpar(){
-        if (getNumero()%2==0){
+    public int verificarSeONumeroEparOuImpar(int num){
+        if (num%2==0){
             System.out.println("Esse número é par");
         }
         else {
             System.out.println("Esse número é ímpar");
         }
+        return num;
     }
 }

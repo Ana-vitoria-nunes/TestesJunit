@@ -6,12 +6,9 @@ import org.junit.jupiter.api.Test;
 public class CalcularTest {
 
     @Test
-    public void NumeroPar(){
-        int numeroPar=0;
-        Calcular calcular=new Calcular(2);
-        if (calcular.getNumero()%2==0){
-            numeroPar=calcular.getNumero();
-        }
-        Assertions.assertEquals(calcular.getNumero(),numeroPar);
+    public void NumeroParouImpar(){
+        Calcular calcular=new Calcular(5);
+        int num=calcular.verificarSeONumeroEparOuImpar(calcular.getNumero());
+        Assertions.assertEquals(calcular.getNumero(),num);
     }
 }
